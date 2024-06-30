@@ -147,3 +147,14 @@ git push origin --delete fix/authentication
 git push < remote > :< branch >
 ```
 
+### Pull vs Fetch
+pull 과 fetch 의 차이점은 병합(Merge) 처리 여부입니다.
+
+PULL : pull 은 원격 레포지토리로부터 최신 커밋들을 내려받아서, 현재 로컬 브랜치와 자동으로 병합을 진행합니다.
+
+Fetch : 반면 fetch 는 원격 레포지토리에서 최신 commit 코드를 이름없는 임시 브랜치로 내려받고, 병합(merge)을 진행하지 않습니다.
+
+즉, 개발자가 수동으로 직접 merge 를 진행해야 합니다.
+이떄 브렌치는 FETCH_HEAD 의 이름으로 체크아웃이 가능합니다.
+=> 정리해보면, 사실상 pull 명령은 내부적으로 봤을때 fetch 와 merge 의 과정을 포함하고 있는 것입니다. fetch 이후 merge 를 수행하면 pull 명령과 동일한 수행 내역이 되는 것입니다.
+
