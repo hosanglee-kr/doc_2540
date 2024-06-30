@@ -30,6 +30,24 @@ git push origin [브랜치명]
 이렇게 하면 로컬에서 작업한 내용이 원격 저장소의 해당 브랜치에 반영됩니다
 
 
+## 이미 커밋된 파일 gitignore 추적 취소 방법
+### 단일 파일 추적 취소
+특정 파일이 이미 커밋된 상태에서 이후로는 무시하고자 할 때, 
+```bash
+# 단일 파일 추적 취소
+git rm --cached [파일명]
+```
+명령어를 사용해 파일 추적을 취소할 수 있습니다. 이 명령은 파일을 시스템에서 삭제하지 않고 Git 추적에서만 제외합니다.
+
+###.gitignore에 포함된 모든 파일 추적 취소
+.gitignore에 새롭게 추가된 파일들을 일괄적으로 추적에서 제외하려면, 먼저 모든 변경 사항을 커밋한 후 git rm --cached 명령어를 사용합니다.
+예시 코드
+```bash
+# .gitignore에 있는 모든 파일 추적 취소
+git rm --cached -r .
+git add .
+git commit -m "Untrack files in .gitignore"
+```
 
 
 
