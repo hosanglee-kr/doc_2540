@@ -49,5 +49,26 @@ git add .
 git commit -m "Untrack files in .gitignore"
 ```
 
+### git checkout 사용 예시:
+```bash
+# develop 브랜치로 전환
+git checkout develop
 
+# 새 브랜치를 생성하고 그곳으로 전환
+git checkout -b new-feature
+
+# 특정 커밋으로 HEAD를 이동
+git checkout 5d3a123
+
+# 특정 파일을 마지막 커밋 상태로 복원
+git checkout -- file.txt
+```
+### git switch 사용 예시:
+```bash
+# develop 브랜치로 전환
+git switch develop
+
+# 새 브랜치를 생성하고 그곳으로 전환
+git switch -c new-feature
+```
 
