@@ -78,8 +78,10 @@ cf) HEAD : 여러 브랜치 중에서 현재 작업중인 브랜치가 무엇인
 
 ### 1 브렌치 생성 및 조회
 ```bash
-git branch        : 모든 브랜치 조회
-git branch 브랜치명 : 새로운 브랜치 생성
+# 모든 브랜치 조회
+git branch
+#새로운 브랜치 생성
+git branch 브랜치명
 ```
 ### 2. 브렌치 전환하기
 ```bash
@@ -108,7 +110,8 @@ git log --oneline
 git log --oneline --branches
 
 # 모든 브랜치의 커밋 상황을 시각적으로 표현
-# (각 브랜치들의 커밋 생성순서 및 관계를 그래프 형태로 확인 가능합니다.)
+# 각 브랜치들의 커밋 생성순서 및 관계를
+# 그래프 형태로 확인 가능
 git log --oneline --branches --graph
 ```
 
@@ -116,20 +119,25 @@ git log --oneline --branches --graph
 ```bash
 git log 브렌치1 ..브렌치2
 
-# 브렌치 사이의 차이점을 확인합니다. 여기서는 master 와 safecal 브랜치의 차이를 확인합니다.
+# 브렌치 사이의 차이점을 확인합니다.
+# master와 safecal 브랜치의 차이 확인
 git log master ..safecal
 
-# 브렌치1에는 없고 브렌치2에만 있는 커밋의 log 를 띄어줍니다.
+# 브렌치1에는 없고
+# 브렌치2에만 있는 커밋의 log 확인
 git log 브렌치1..브렌치2 
 
-# 브렌치2에는 없고 브렌치1에만 있는 커밋의 log 를 띄어줍니다.
+# 브렌치2에는 없고 
+# 브렌치1에만 있는 커밋의  log 확인
 git log 브렌치2..브렌치1
 ```
 ### 5. 원격 레포지토리에서 브랜치 삭제하기
 ```bash
 git push < remote >--delete < branch >
 
-# 예를 들어서 삭제하고 싶은 원격 브랜치 이름이 fix/authentication 이라면
+# 예를 들어서 삭제하고 싶은 
+# 원격 브랜치 이름이
+# fix/aut hentication 이라면
 
 git push origin --delete fix/authentication
 ```
