@@ -72,3 +72,70 @@ git switch develop
 git switch -c new-feature
 ```
 
+
+## Branch 관리를 위한 명령
+cf) HEAD : 여러 브랜치 중에서 현재 작업중인 브랜치가 무엇인지 알려주는 포인터
+
+### 1 브렌치 생성 및 조회
+```bash
+git branch        : 모든 브랜치 조회
+git branch 브랜치명 : 새로운 브랜치 생성
+```
+### 2. 브렌치 전환하기
+```bash
+git checkout 브렌치명
+git switch 브렌치명
+```
+checkout 키워드가 활용되는 명령어들이 너무 많아져서, switch 라는 키워드의 명령어를 새롭게 만들어졌다고 합니다.
+
+### 3. 새로운 브랜치 생성후, 해당 브랜치로 바로 이동하기
+```bash
+git checkout -b 새로운 브랜치명
+git switch -c 새로운 브랜치명
+```
+
+새로운 브렌치를 생성하면서 이동하는 명령입니다. 즉, 위 명령어들은 아래 명령어를 한 줄로 줄인것입니다.
+```bash
+git checkout my_branch
+git checkout my_branch
+```
+### 4. 브렌치 히스토리 조회 (git log 관련)
+```bash
+# git log 를 한줄로 간략히 조회
+git log --oneline
+
+# 모든 브랜치의 커밋 상황을 확인
+git log --oneline --branches
+
+# 모든 브랜치의 커밋 상황을 시각적으로 표현
+# (각 브랜치들의 커밋 생성순서 및 관계를 그래프 형태로 확인 가능합니다.)
+git log --oneline --branches --graph
+```
+
+###4. 두 브렌치간의 Commit 차이 조회
+```bash
+git log 브렌치1 ..브렌치2
+
+# 브렌치 사이의 차이점을 확인합니다. 여기서는 master 와 safecal 브랜치의 차이를 확인합니다.
+git log master ..safecal
+
+# 브렌치1에는 없고 브렌치2에만 있는 커밋의 log 를 띄어줍니다.
+git log 브렌치1..브렌치2 
+
+# 브렌치2에는 없고 브렌치1에만 있는 커밋의 log 를 띄어줍니다.
+git log 브렌치2..브렌치1
+```
+### 5. 원격 레포지토리에서 브랜치 삭제하기
+```bash
+git push < remote >--delete < branch >
+
+# 예를 들어서 삭제하고 싶은 원격 브랜치 이름이 fix/authentication 이라면
+
+git push origin --delete fix/authentication
+```
+와 같이 명령을 입력하시면 됩니다. 그러면 이제 이 브랜치는 원격에서 삭제됩니다.
+참고로 더 짧은 버전의 명령어도 있습니다.
+```bash
+git push < remote > :< branch >
+```
+
