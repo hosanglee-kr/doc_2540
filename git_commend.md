@@ -3,7 +3,45 @@
 
 * [Git subtree를 활용한 코드 공유](https://blog.rhostem.com/posts/2020-01-03-code-sharing-with-git-subtree)
 
+### 1. 서브트리로 사용할 원격 저장소 추가
+다른 저장소를 서브트리로 바로 추가할 수도 있다. 하지만 서브트리를 fetch, pull, push도 할 것이므로 서브트리로 사용할 Git 저장소를 상위 저장소의 새로운 원격 저장소로서 추가한다.
+```
+git remote add gitsubtree-lib git@github.com:rhostem/gitsubtree-lib.git
+git remote add <원격 저장소의 이름> <원격 저장소의 주소>
+```
+원격 저장소의 이름으로 subtree를 사용했다. 기본 저장소 외에 하나가 더 추가되었음을 확인할 수 있다.
+```
+git remote ⮐
+origin
+gitsubtree-lib
+```
+### 2. 새로운 원격 저장소의 브랜치를 서브트리로 추가.
+```
+git subtree add --prefix lib gitsubtree-lib master
+git subtree add --prefix <클론할 폴더> <원격 저장소의 이름> <브랜치 이름>
+```
+--prefix 옵션으로 서브트리를 클론할 폴더를 지정한다. 그리고 원격 저장소의 이름, 체크아웃할 브랜치 이름을 지정하면 서브트리로 gitsubtree-lib 저장소가 추가된다. 브랜치는 master 를 사용하도록 했다.
 
+서브트리로 추가한 직후 폴더 구조는 아래와 같다.
+```
+.
+├── README.md (gitsubtree-consumer의 파일)
+└── lib
+    └── README.md (gitsubtree-lib의 파일)
+```
+### 3. 서브트리를 원격에서 내려받기(pull)
+서브트리의 원격에 올라온 커밋을 내려받는다. 서브트리를 추가하는 명령어와 큰 차이가 없으며, 자동으로 병합(merge)이 진행된다.
+```
+git subtree pull --prefix lib gitsubtree-lib master
+```
+커맨드라인에서 실행 후 병합이 완료되면 에디터가 열리면서 커밋 메시지의 저장을 요구할 수도 있다.
+
+### 4. 서브트리를 원격에 올리기(push)
+상위 저장소에서 서브트리의 소스를 직접 수정 후 변경사항을 커밋하고 원격에 푸시할 수 있다. 역시 명령어는 내려받기와 큰 차이가 없다.
+```
+git subtree push --prefix lib gitsubtree-lib master
+```
+명령어가 짧지 않으므로 쉘 스크립트나 NPM 스크립트로 작성해서 사용하는 편이 좋다. 그리고 서브트리 명령어는 항상 상위 저장소의 최상위 폴더에서 실행해야 한다. 서브트리의 소스가 있는 폴더에서 git subtree명령어를 사용하면 동작하지 않는다
 
 ---
 
