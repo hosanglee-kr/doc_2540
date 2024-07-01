@@ -1,4 +1,11 @@
 
+## Git subtree를 활용한 코드 공유
+
+* [Git subtree를 활용한 코드 공유](https://blog.rhostem.com/posts/2020-01-03-code-sharing-with-git-subtree)
+
+
+
+---
 
 ### 1. 원격 브랜치 목록 확인하기
 먼저, 원격 저장소에 어떤 브랜치들이 있는지 확인해야 합니다.<br> 
