@@ -72,7 +72,8 @@ git add .
 git commit -m "initial commit"
  
 
-# 3. BitBucket가서 새로운 Repository 생성
+# 3. gitnweb에서
+#    신규Repository생성
 
 # 4. Git 저장소 연결 후 강제 push
 git remote add origin {git remote url}
