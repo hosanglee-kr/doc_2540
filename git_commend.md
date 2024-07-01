@@ -57,6 +57,30 @@ git add .
 git commit -m "Untrack files in .gitignore"
 ```
 
+---
+## GIT Clone으로 신규 생성 프로젝트 초기화
+
+```
+# 1. Clone 뜬 플젝 원격 끊기
+git remote -v
+git remote remove origin
+ 
+# 2. 원격 끊어주고 난 뒤
+rm -rf .git
+git init
+git add .
+git commit -m "initial commit"
+ 
+
+# 3. BitBucket가서 새로운 Repository 생성
+
+# 4. Git 저장소 연결 후 강제 push
+git remote add origin {git remote url}
+git push -u --force origin master
+```
+
+---
+
 ### git checkout 사용 예시:
 ```bash
 # develop 브랜치로 전환
