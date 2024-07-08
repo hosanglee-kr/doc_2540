@@ -29,3 +29,7 @@ ESP_ERROR_CHECK(uart_set_pin(UART_NUM_2, 4, 5, 18, 19));
 - Interfaces: 1xI2C, 1xSPI, 2xUART, 11xGPIO (PWM), 4xADC
 - On board LED blue light, GPIO8 pin
 - Size: 22.52x18mm
+
+
+## code
+<script src="https://gist.github.com/hosanglee-kr/47c91db8bc29f4f0609062ddcf03db24.js"></script>
