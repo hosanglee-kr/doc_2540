@@ -32,4 +32,5 @@ ESP_ERROR_CHECK(uart_set_pin(UART_NUM_2, 4, 5, 18, 19));
 
 
 ## code
-(<script src="https://gist.github.com/hosanglee-kr/47c91db8bc29f4f0609062ddcf03db24.js"></script>)
+
+https://gist.github.com/47c91db8bc29f4f0609062ddcf03db24.git
