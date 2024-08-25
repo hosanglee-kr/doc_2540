@@ -11,6 +11,10 @@ s523f241efa674831ba4796424c4a8f3a6.jpg
 제품 매개변수 강력한 무선 기능: Bluetooth 5.0, 온보드 안테나 강력한 CPU: nRF52840 칩은 ARM Cortex-M4F 프로세서를 사용, 64MHz로 클록, 내장 1MB 플래시 메모리 및 256KB RAM 배터리 충전 칩: 리튬 배터리 충전 및 방전 지원 전력 소비: 대기 전력 소비는 1mA에 도달할 수 있음
 
 ### 핀 다이어그램
+<div align="center">
+  <img src="boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg" width="1000" alt="boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg"/>
+</div>
+
 boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg
 
 
