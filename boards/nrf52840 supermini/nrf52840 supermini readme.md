@@ -12,7 +12,7 @@ s523f241efa674831ba4796424c4a8f3a6.jpg
 
 ### 핀 다이어그램
 <div align="center">
-  <img src="nrf52840 supermini/nrf52840 suprrmini pinout.jpg" width="1000" alt="boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg"/>
+  <img src="nrf52840 suprrmini pinout.jpg" width="1000" alt="nrf52840 suprrmini pinout.jpg"/>
 </div>
 
 boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg
