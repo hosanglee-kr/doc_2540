@@ -20,7 +20,8 @@
 * dual-current Li-Po charging with a jumper that you solder with max of 300mA
 software-controllable MOSFET on the VCC pin to cut standby current consumption of LEDs and other peripherals (in theory, i still need to test this)
 * nice!nano bootloader pre-flashed
-* Includes 2x 12 pin headers
+* low dropout current regulator (LDO): MICRONE(Nanjing Micro One Elec) ME6217C33M5G, with max output current 800 mA. Low current consumption during operation: 100uA and while turned off 1uA (spreadsheet data)
+* have seen users with Zephyr firmware and LDO enabled reaching 150uA power consumption, but it will turn off current to the external peripherals like Oled Screens, RGB Leds etc. If LDO is disabled it goes to about 800uA and sends current to the external peripherals. I still have to test this also.
 
 
 
