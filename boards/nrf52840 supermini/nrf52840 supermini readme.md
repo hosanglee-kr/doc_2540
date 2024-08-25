@@ -1,6 +1,11 @@
 
 ## https://wiki.icbbuy.com/doku.php?id=developmentboard:nrf52840
 
+## https://github.com/joric/nrfmicro/wiki/Alternatives
+
+
+
+
 ### 특별 참고 사항:
 기본 공장 내장 프로그램은 Blink-All-IO입니다(모든 IO 포트가 1초 안에 자동으로 뒤집힙니다). Nice! Nano V2 부트로더를 입력해야 하는 경우 0.5초 이내에 RST를 GND에 두 번 단락시키세요. 키보드 보드에서 RST 버튼을 0.5초 이내에 두 번 누르기만 하면 됩니다.
 소개
