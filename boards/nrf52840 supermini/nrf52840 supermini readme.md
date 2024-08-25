@@ -4,6 +4,10 @@
 ## https://github.com/joric/nrfmicro/wiki/Alternatives
 
 
+### 
+* The SuperMini NRF52840 is Nice!Nano clone which in turn is based on the Pro Micro layout. This means that it can be used with almost any Pro Mcro keyboard. Unlike the Pro Micro however it sports wireless functionality in the form of Bluetooth and pins to use/charge a lithium-ion battery.
+
+* The nRF52840 MCU uses an ARM Cortex-M4F CPU clocked at 64MHz and offers 1MB of flash memory and 256KB of RAM. Although CircuitPython will use up most of the flash memory.
 
 
 ### 특별 참고 사항:
