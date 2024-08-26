@@ -43,6 +43,9 @@ s523f241efa674831ba4796424c4a8f3a6.jpg
 boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg
 
 
+boards/nrf52840 supermini/nice nano pinout.png
+
+
 ### 전원 공급 장치
 SuperMini NRF52840은 3.7V 리튬 배터리의 충전 및 방전을 지원합니다. 충전 중 충전 속도는 100mA이므로 2000mAh 배터리는 완전히 충전하는 데 20시간이 걸립니다.
 충전 전류 경고BOOST가 연결되면 충전 전류가 100mA에서 300mA로 증가하고 커패시터 용량이 500mAh보다 클 때만 연결할 수 있습니다(폭발을 방지하기 위해💥).
