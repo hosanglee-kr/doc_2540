@@ -42,8 +42,13 @@ s523f241efa674831ba4796424c4a8f3a6.jpg
 
 boards/nrf52840 supermini/nrf52840 suprrmini pinout.jpg
 
+<div align="center">
+  <img src="nice nano pinout.png" width="1000" alt="nice nano pinout.png"/>
+</div>
 
-boards/nrf52840 supermini/nice nano pinout.png
+<div align="center">
+  <img src="nice nano schematic.png" width="1000" alt="nice nano schematic.png"/>
+</div>
 
 
 ### 전원 공급 장치
