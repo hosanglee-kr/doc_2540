@@ -507,7 +507,7 @@ VS Code CLI 명령어로 GitHub에 프로젝트를 새로 생성하고 `dev1` �
    git init          # 로컬에서 Git 리포지토리 초기화
    git add .         # 모든 파일을 스테이징
    git commit -m "Initial commit"   # 커밋 메시지 작성
-   git remote add origin https://github.com/username/repo.git  # GitHub 리포지토리 연결
+   git remote add origin https://github.com/hosanglee-kr/ESP32_sqlite3_001.git  # GitHub 리포지토리 연결
    git push -u origin master  # 원격 저장소에 푸시
    ```
 
@@ -524,7 +524,6 @@ VS Code CLI 명령어로 GitHub에 프로젝트를 새로 생성하고 `dev1` �
    git push origin dev1     # dev1 브랜치로 푸시
    ```
 
-이 명령어들을 VS Code 터미널에서 실행하면 됩니다.
 
 
 
