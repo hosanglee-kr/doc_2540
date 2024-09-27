@@ -495,3 +495,36 @@ git config receive.denynonfastforwards false
   df = diff 
 ```
 
+
+# vs code 신규 레파지토리 생성
+
+VS Code CLI 명령어로 GitHub에 프로젝트를 새로 생성하고 `dev1` 브랜치를 만들어 파일을 푸시하는 과정은 다음과 같습니다.
+
+1. **현재 프로젝트를 GitHub에 새로 프로젝트로 생성**
+   - GitHub에서 새 레포지토리를 생성 (웹에서 수동으로 해야 함).
+   - 레포지토리를 생성한 후, 해당 프로젝트와 로컬 Git 리포지토리를 연결합니다.
+   ```bash
+   git init          # 로컬에서 Git 리포지토리 초기화
+   git add .         # 모든 파일을 스테이징
+   git commit -m "Initial commit"   # 커밋 메시지 작성
+   git remote add origin https://github.com/username/repo.git  # GitHub 리포지토리 연결
+   git push -u origin master  # 원격 저장소에 푸시
+   ```
+
+2. **`dev1` 브랜치 생성**
+   ```bash
+   git checkout -b dev1   # 새 브랜치 dev1 생성 및 체크아웃
+   ```
+
+3. **파일들을 `dev1` 브랜치로 push**
+   - 파일 변경 후, 스테이징 및 커밋을 진행한 후 푸시합니다.
+   ```bash
+   git add .                # 변경된 파일 스테이징
+   git commit -m "Changes in dev1 branch"  # 커밋
+   git push origin dev1     # dev1 브랜치로 푸시
+   ```
+
+이 명령어들을 VS Code 터미널에서 실행하면 됩니다.
+
+
+
