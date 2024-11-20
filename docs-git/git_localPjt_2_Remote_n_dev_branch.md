@@ -5,14 +5,14 @@
 ---
 
 ### 1. **Local Git 초기화 및 사용자 설정**
-#### **Local Git 저장소 초기화**
+#### 1.1 **Local Git 저장소 초기화**
 ```bash
 git init
 ```
 - 현재 디렉토리를 Git 저장소로 초기화합니다.  
 - `.git` 폴더가 생성되며, Git은 이 폴더를 통해 파일 변경 사항을 추적합니다.
 
-#### **사용자 이름 및 이메일 설정**
+#### 1.2 **사용자 이름 및 이메일 설정**
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
@@ -28,14 +28,14 @@ git config --global user.email "your-email@example.com"
 ---
 
 ### 3. **Local Git에 파일 추가 및 첫 커밋**
-#### **Local Git에 파일 추가**
+#### 3.1 **Local Git에 파일 추가**
 ```bash
 git add .
 ```
 - 현재 디렉토리의 모든 파일을 **Staging Area**에 추가합니다.  
 - 특정 파일만 추가하려면 `git add 파일명`을 사용합니다.
 
-#### **커밋 생성**
+#### 3.2 **커밋 생성**
 ```bash
 git commit -m "Initial commit"
 ```
@@ -45,28 +45,28 @@ git commit -m "Initial commit"
 ---
 
 ### 4. **GitHub 원격 레포지토리 연결 및 푸시**
-#### **원격 레포지토리 연결**
+#### 4.1 **원격 레포지토리 연결**
 ```bash
 git remote add origin https://github.com/YourUsername/YourRepository.git
 ```
 - 로컬 저장소를 GitHub의 새 레포지토리에 연결합니다.  
 - `origin`은 원격 저장소 이름이며, 기본적으로 원격 저장소를 가리키는 이름으로 사용됩니다.
 
-#### **연결 확인**
+#### 4.2 **연결 확인**
 ```bash
 git remote -v
 ```
 - 연결된 원격 저장소를 확인합니다.  
 - `fetch`와 `push` URL이 표시되며, 올바르게 연결되었는지 확인합니다.
 
-#### **Local 브랜치 이름 변경**
+#### 4.3 **Local 브랜치 이름 변경**
 ```bash
 git branch -M main
 ```
 - 기본 브랜치를 `main`으로 변경합니다.  
 - GitHub는 기본 브랜치로 `main`을 사용하므로, 로컬 저장소의 브랜치 이름도 동일하게 맞춥니다.
 
-#### **GitHub로 푸시**
+#### 4.4 **GitHub로 푸시**
 ```bash
 git push -u origin main
 ```
@@ -76,27 +76,27 @@ git push -u origin main
 ---
 
 ### 5. **새 브랜치 생성 및 전환**
-#### **새 브랜치 생성**
+#### 5.1 **새 브랜치 생성**
 ```bash
 git branch dev1
 ```
 - `dev1`이라는 이름의 새 브랜치를 생성합니다.  
 - 브랜치를 생성만 하고 전환하지는 않습니다.
 
-#### **현재 브랜치 확인**
+#### 5.2 **현재 브랜치 확인**
 ```bash
 git branch
 ```
 - 현재 브랜치 목록과 활성화된 브랜치(앞에 `*` 표시)를 확인합니다.
 
-#### **브랜치 전환**
+#### 5.3 **브랜치 전환**
 ```bash
 git checkout dev1
 ```
 - 작업 중인 브랜치를 `dev1`으로 변경합니다.  
 - 변경 후에는 해당 브랜치에서 작업이 저장됩니다.
 
-#### **브랜치 생성과 전환을 동시에 수행**
+#### 5.4 **브랜치 생성과 전환을 동시에 수행**
 ```bash
 git checkout -b dev1
 ```
@@ -105,7 +105,7 @@ git checkout -b dev1
 ---
 
 ### 6. **현재 브랜치 확인**
-#### **활성화된 브랜치 확인**
+#### 6.1 **활성화된 브랜치 확인**
 ```bash
 git branch
 ```
@@ -114,7 +114,7 @@ git branch
 
 ---
 
-### 7. **요약**
+### 7. **명령어 요약**
 ```bash
 # Local Git 초기화
 git init
