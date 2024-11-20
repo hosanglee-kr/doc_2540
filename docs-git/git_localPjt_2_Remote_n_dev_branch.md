@@ -72,7 +72,7 @@ git push -u origin main
 ```
 - 로컬 `main` 브랜치를 GitHub의 `main` 브랜치에 업로드합니다.  
 - `-u` 옵션은 추후 `git push` 명령어를 간단히 사용할 수 있도록 원격 브랜치를 기본값으로 설정합니다.
-
+- git push는 기본적으로 현재 체크아웃된 브랜치를 원격 저장소의 동일한 이름의 브랜치로 푸시합니다
 ---
 
 ### 5. **새 브랜치 생성 및 전환**
@@ -147,9 +147,11 @@ git push -u origin main
 git branch dev1
 git checkout dev1
 
-
 # Local dev1 브랜치  생성과 전환을 동시에 수행
 git checkout -b dev1
+
+# git push는 기본적으로 현재 체크아웃된 브랜치를
+# 원격 저장소의 동일 이름 브랜치로 푸시함
 
 # 현재 브랜치 확인
 git branch
