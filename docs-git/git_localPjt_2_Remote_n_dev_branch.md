@@ -119,9 +119,13 @@ git branch
 # Local Git 초기화
 git init
 
-# Local git 사용자 설정
+# Local git 사용자 설정 (PC 전역설정)
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
+
+# Local git 사용자 설정 (프로잭트만 설정)
+git config --local user.name "Your Name"
+git config --local user.email "your-email@example.com"
 
 # Local git 파일 추가
 git add .
@@ -135,7 +139,8 @@ git remote add origin https://github.com/YourUsername/YourRepository.git
 # 로컬 브랜치 이름을 main으로 변경
 git branch -M main
 
-
+# 로컬 main 브랜치를 remote main 브랜치에 업로드
+# `-u` 옵션은 추후 `git push` 명령어를 간단히 사용할 수 있도록 원격 브랜치를 기본값으로 설정합니다.
 git push -u origin main
 
 # Local dev1 브랜치 생성 및 전환
