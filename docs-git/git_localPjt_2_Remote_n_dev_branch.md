@@ -21,6 +21,11 @@ git config --global user.email "your-email@example.com"
 - `--global` 옵션은 시스템 전역적으로 설정하며, 특정 프로젝트에만 설정하려면 `--local` 옵션을 사용합니다.
 
 ---
+### 2. **GitHub 레포지토리 생성**
+- GitHub에 로그인 후 New Repository를 생성합니다.
+- Repository Name을 입력하고 Create Repository를 클릭합니다.
+- 생성 후 나타나는 GitHub Reps URL를 복사해둡니다.
+---
 
 ### 2. **파일 추가 및 첫 커밋**
 #### **Git에 파일 추가**
