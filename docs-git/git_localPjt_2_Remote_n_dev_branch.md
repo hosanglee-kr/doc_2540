@@ -4,8 +4,8 @@
 
 ---
 
-### 1. **Git 초기화 및 사용자 설정**
-#### **Git 저장소 초기화**
+### 1. **Local Git 초기화 및 사용자 설정**
+#### **Local Git 저장소 초기화**
 ```bash
 git init
 ```
@@ -21,14 +21,14 @@ git config --global user.email "your-email@example.com"
 - `--global` 옵션은 시스템 전역적으로 설정하며, 특정 프로젝트에만 설정하려면 `--local` 옵션을 사용합니다.
 
 ---
-### 2. **GitHub 레포지토리 생성**
+### 2. **원격 GitHub 레포지토리 생성**
 - GitHub에 로그인 후 New Repository를 생성합니다.
 - Repository Name을 입력하고 Create Repository를 클릭합니다.
 - 생성 후 나타나는 GitHub Reps URL를 복사해둡니다.
 ---
 
-### 3. **파일 추가 및 첫 커밋**
-#### **Git에 파일 추가**
+### 3. **Local Git에 파일 추가 및 첫 커밋**
+#### **Local Git에 파일 추가**
 ```bash
 git add .
 ```
@@ -59,7 +59,7 @@ git remote -v
 - 연결된 원격 저장소를 확인합니다.  
 - `fetch`와 `push` URL이 표시되며, 올바르게 연결되었는지 확인합니다.
 
-#### **로컬 브랜치 이름 변경**
+#### **Local 브랜치 이름 변경**
 ```bash
 git branch -M main
 ```
@@ -116,27 +116,34 @@ git branch
 
 ### 7. **요약**
 ```bash
-# Git 초기화 및 사용자 설정
+# Local Git 초기화
 git init
+
+# Local git 사용자 설정
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 
-# 파일 추가 및 첫 커밋
+# Local git 파일 추가
 git add .
+# local 커밋 생성
 git commit -m "Initial commit"
 
 # 원격 레포지토리 연결 및 푸시
 git remote add origin https://github.com/YourUsername/YourRepository.git
+
+
 # 로컬 브랜치 이름을 main으로 변경
 git branch -M main
+
+
 git push -u origin main
 
-# 브랜치 생성 및 전환
+# Local dev1 브랜치 생성 및 전환
 git branch dev1
 git checkout dev1
 
 
-# 또는 생성과 전환을 동시에 수행
+# Local dev1 브랜치  생성과 전환을 동시에 수행
 git checkout -b dev1
 
 # 현재 브랜치 확인
