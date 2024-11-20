@@ -122,12 +122,15 @@ git commit -m "Initial commit"
 
 # 원격 레포지토리 연결 및 푸시
 git remote add origin https://github.com/YourUsername/YourRepository.git
+# 로컬 브랜치 이름을 main으로 변경
 git branch -M main
 git push -u origin main
 
 # 브랜치 생성 및 전환
 git branch dev1
 git checkout dev1
+
+
 # 또는 생성과 전환을 동시에 수행
 git checkout -b dev1
 
@@ -135,4 +138,3 @@ git checkout -b dev1
 git branch
 ```
 
-위 명령어와 설명을 참고하여 GitHub로 로컬 프로젝트를 올리고 브랜치를 관리할 수 있습니다. VS Code를 사용하면 UI를 통해 작업을 간소화할 수도 있습니다.
