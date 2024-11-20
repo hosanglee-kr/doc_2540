@@ -27,7 +27,7 @@ git config --global user.email "your-email@example.com"
 - 생성 후 나타나는 GitHub Reps URL를 복사해둡니다.
 ---
 
-### 2. **파일 추가 및 첫 커밋**
+### 3. **파일 추가 및 첫 커밋**
 #### **Git에 파일 추가**
 ```bash
 git add .
@@ -44,7 +44,7 @@ git commit -m "Initial commit"
 
 ---
 
-### 3. **GitHub 원격 레포지토리 연결 및 푸시**
+### 4. **GitHub 원격 레포지토리 연결 및 푸시**
 #### **원격 레포지토리 연결**
 ```bash
 git remote add origin https://github.com/YourUsername/YourRepository.git
@@ -75,7 +75,7 @@ git push -u origin main
 
 ---
 
-### 4. **새 브랜치 생성 및 전환**
+### 5. **새 브랜치 생성 및 전환**
 #### **새 브랜치 생성**
 ```bash
 git branch dev1
@@ -104,7 +104,7 @@ git checkout -b dev1
 
 ---
 
-### 5. **현재 브랜치 확인**
+### 6. **현재 브랜치 확인**
 #### **활성화된 브랜치 확인**
 ```bash
 git branch
@@ -114,7 +114,7 @@ git branch
 
 ---
 
-### 6. **요약**
+### 7. **요약**
 ```bash
 # Git 초기화 및 사용자 설정
 git init
