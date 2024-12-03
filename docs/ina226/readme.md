@@ -1,4 +1,3 @@
-<img src="/assets/images/lightning.png" width="100%" height="100%" />
 
 
 # Example: INA226 Basic Setup
